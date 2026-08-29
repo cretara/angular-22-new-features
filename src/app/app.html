@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container" [ngClass]="mobileQuery() ? 'sidenav-mobile' : ''">
+<mat-sidenav-container class="sidenav-container" [class.sidenav-mobile]="mobileQuery()">
   <mat-sidenav [mode]="mobileQuery() ? 'over' : 'side'" [fixedInViewport]="mobileQuery()"
                fixedTopGap="56">
     <mat-nav-list>
